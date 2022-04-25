@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.textView).text = text
 
-
+//      ドメインの取得
         val domein = URI(text).rawAuthority
 
 
