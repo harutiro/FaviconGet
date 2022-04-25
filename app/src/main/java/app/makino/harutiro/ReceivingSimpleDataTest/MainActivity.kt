@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
             .centerCrop() //resizeで指定した範囲になるよう中央から切り出し
             .into(findViewById<ImageView>(R.id.imageView)) //imageViewに流し込み
 
+        
+
 
     }
 }
