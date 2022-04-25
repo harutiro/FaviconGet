@@ -5,6 +5,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
+import java.net.URI
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,11 +20,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.textView).text = text
 
 
-        val domein = UrlDomein().hen(text)
+        val domein = URI(text).rawAuthority
 
 
         findViewById<TextView>(R.id.textView2).text = domein
-
 
 
         Picasso.get()
